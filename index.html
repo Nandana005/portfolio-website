@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandana Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: #020617;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            cursor: pointer;
+        }
+
+        nav ul li:hover {
+            color: #38bdf8;
+        }
+
+        /* Home Section */
+        .home {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .home h1 {
+            font-size: 48px;
+            margin: 10px 0;
+        }
+
+        .home h3 {
+            font-size: 24px;
+            color: #38bdf8;
+        }
+
+        .home p {
+            font-size: 18px;
+            max-width: 500px;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #38bdf8;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Nandana</h2>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home">
+        <h1>Hi, I'm Nandana 👋</h1>
+        <h3>Aspiring Data Scientist</h3>
+        <p>Turning data into meaningful insights and solving real-world problems using Data Science.</p>
+        <button class="btn">View My Work</button>
+    </section>
+
+</body>
+</html>

@@ -1,129 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills | Nandana</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+
+    body {
+        background: #000000;
+        color: #e5e7eb;
+    }
+
+    /* NAVBAR */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 60px;
+        background: #050505;
+        border-bottom: 1px solid #111827;
+    }
+
+    nav h2 {
+        color: #38bdf8;
+        font-weight: 600;
+    }
+
+    nav div {
+        display: flex;
+        gap: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #cbd5e1;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #38bdf8;
+    }
+
+    /* CONTAINER */
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 60px 20px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    p.subtitle {
+        text-align: center;
+        color: #9ca3af;
+        margin-bottom: 40px;
+    }
+
+    /* GRID */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: #0a0a0a;
+        padding: 22px;
+        border-radius: 12px;
+        border: 1px solid #1f2937;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+        border-color: #38bdf8;
+        box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
+    }
+
+    .card h2 {
+        color: #38bdf8;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    ul li {
+        margin: 6px 0;
+        color: #cbd5e1;
+        font-size: 14px;
+    }
+
+    ul li::before {
+        content: "▹ ";
+        color: #38bdf8;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
         nav {
-            display: flex;
-            justify-content: space-between;
-            padding: 15px 50px;
-            background: #020617;
-        }
-
-        nav h2 {
-            color: #38bdf8;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-        }
-
-        nav a:hover {
-            color: #38bdf8;
-        }
-
-        .container {
-            padding: 50px;
-            max-width: 1000px;
-            margin: auto;
+            flex-direction: column;
+            gap: 10px;
         }
 
         h1 {
-            text-align: center;
-            color: #38bdf8;
+            font-size: 30px;
         }
+    }
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .card {
-            background: #020617;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        .card h2 {
-            color: #38bdf8;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin: 5px 0;
-        }
-    </style>
+</style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <h2>Nandana</h2>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="skills.html">Skills</a>
-        </div>
-    </nav>
-
-    <!-- Skills Section -->
-    <div class="container">
-        <h1>My Skills</h1>
-
-        <div class="skills-grid">
-
-            <div class="card">
-                <h2>Programming</h2>
-                <ul>
-                    <li>Python</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>Data Analysis</h2>
-                <ul>
-                    <li>Pandas</li>
-                    <li>NumPy</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>Machine Learning</h2>
-                <ul>
-                    <li>Regression</li>
-                    <li>Classification</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>Tools</h2>
-                <ul>
-                    <li>Google Colab</li>
-                    <li>Power BI</li>
-                    <li>GitHub</li>
-                </ul>
-            </div>
-
-        </div>
+<!-- NAVIGATION -->
+<nav>
+    <h2>Nandana</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
     </div>
+</nav>
+
+<!-- SKILLS -->
+<div class="container">
+
+    <h1>My Skills</h1>
+    <p class="subtitle">Technologies and tools I work with</p>
+
+    <div class="skills-grid">
+
+        <div class="card">
+            <h2>Programming</h2>
+            <ul>
+                <li>Python</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Data Analysis</h2>
+            <ul>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>Excel</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Machine Learning</h2>
+            <ul>
+                <li>Regression</li>
+                <li>Classification</li>
+                <li>Scikit-Learn</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Data Visualization</h2>
+            <ul>
+                <li>Power BI</li>
+                <li>Matplotlib</li>
+                <li>Seaborn</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Tools</h2>
+            <ul>
+                <li>Google Colab</li>
+                <li>GitHub</li>
+                <li>Jupyter Notebook</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>

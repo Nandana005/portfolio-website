@@ -1,117 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | Nandana</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+
+    body {
+        background: #000000;
+        color: #e5e7eb;
+    }
+
+    /* NAVBAR */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 60px;
+        background: #050505;
+        border-bottom: 1px solid #111827;
+    }
+
+    nav h2 {
+        color: #38bdf8;
+        font-weight: 600;
+    }
+
+    nav div {
+        display: flex;
+        gap: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #cbd5e1;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #38bdf8;
+    }
+
+    /* CONTAINER */
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 60px 20px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    p.subtitle {
+        text-align: center;
+        color: #9ca3af;
+        margin-bottom: 40px;
+    }
+
+    /* BLOG CARDS */
+    .post {
+        background: #0a0a0a;
+        padding: 25px;
+        margin-top: 20px;
+        border-radius: 12px;
+        border: 1px solid #1f2937;
+        transition: 0.3s;
+    }
+
+    .post:hover {
+        transform: translateY(-6px);
+        border-color: #38bdf8;
+        box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
+    }
+
+    .post h2 {
+        color: #38bdf8;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .post p {
+        color: #cbd5e1;
+        line-height: 1.7;
+        font-size: 14.5px;
+        margin-bottom: 10px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
         nav {
-            display: flex;
-            justify-content: space-between;
-            padding: 15px 50px;
-            background: #020617;
-        }
-
-        nav h2 {
-            color: #38bdf8;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-        }
-
-        nav a:hover {
-            color: #38bdf8;
-        }
-
-        .container {
-            padding: 50px;
-            max-width: 900px;
-            margin: auto;
+            flex-direction: column;
+            gap: 10px;
         }
 
         h1 {
-            text-align: center;
-            color: #38bdf8;
+            font-size: 30px;
         }
+    }
 
-        .post {
-            background: #020617;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
-        }
-
-        .post h2 {
-            color: #38bdf8;
-        }
-
-        .post p {
-            line-height: 1.6;
-        }
-    </style>
+</style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <h2>Nandana</h2>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="blog.html">Blog</a>
-        </div>
-    </nav>
-
-    <!-- Blog Section -->
-    <div class="container">
-        <h1>Blog & Learning</h1>
-
-        <!-- Blog Post 1 -->
-        <div class="post">
-            <h2>How K-Means Works (Intuitively)</h2>
-            <p>
-                K-Means is a clustering algorithm used to group similar data points together. 
-                It works by selecting a number of clusters (K) and randomly initializing centroids.
-            </p>
-            <p>
-                The algorithm assigns each data point to the nearest centroid and then recalculates the centroids 
-                based on the average of points in each cluster. This process repeats until the centroids no longer change.
-            </p>
-            <p>
-                This method helps in identifying patterns and grouping similar data, such as customer segmentation.
-            </p>
-        </div>
-
-        <!-- Blog Post 2 -->
-        <div class="post">
-            <h2>What I Learned from My First ML Project</h2>
-            <p>
-                My first machine learning project taught me the importance of data preprocessing. 
-                Cleaning the data and handling missing values had a major impact on model performance.
-            </p>
-            <p>
-                I also learned how to select the right model and evaluate its performance using accuracy and other metrics.
-            </p>
-            <p>
-                Overall, the project helped me understand the practical workflow of building a machine learning solution.
-            </p>
-        </div>
-
+<!-- NAVIGATION -->
+<nav>
+    <h2>Nandana</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
     </div>
+</nav>
+
+<!-- BLOG -->
+<div class="container">
+
+    <h1>Blog & Learning</h1>
+    <p class="subtitle">My notes, learnings, and ML concepts explained simply</p>
+
+    <!-- POST 1 -->
+    <div class="post">
+        <h2>How K-Means Works (Intuitively)</h2>
+        <p>
+            K-Means is a clustering algorithm used to group similar data points together.
+            It works by selecting a number of clusters (K) and randomly initializing centroids.
+        </p>
+        <p>
+            The algorithm assigns each data point to the nearest centroid and recalculates the centroids
+            based on the average of points in each cluster until stable.
+        </p>
+        <p>
+            It is widely used in customer segmentation and pattern recognition.
+        </p>
+    </div>
+
+    <!-- POST 2 -->
+    <div class="post">
+        <h2>What I Learned from My First ML Project</h2>
+        <p>
+            My first machine learning project taught me the importance of data preprocessing.
+            Cleaning missing values had a major impact on model performance.
+        </p>
+        <p>
+            I also learned how to choose models and evaluate them using metrics like accuracy.
+        </p>
+        <p>
+            This helped me understand the complete ML workflow from data to prediction.
+        </p>
+    </div>
+
+</div>
 
 </body>
 </html>

@@ -5,18 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nandana | Portfolio</title>
 
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "Segoe UI", sans-serif;
+        font-family: 'Inter', sans-serif;
     }
 
     body {
-        background: #0f172a;
-        color: white;
-        line-height: 1.6;
+        background: #0b1220;
+        color: #e5e7eb;
     }
 
     /* NAVBAR */
@@ -25,95 +27,114 @@
         justify-content: space-between;
         align-items: center;
         padding: 18px 60px;
-        background: rgba(2, 6, 23, 0.9);
-        position: sticky;
-        top: 0;
-        backdrop-filter: blur(10px);
-        z-index: 1000;
+        background: #0f172a;
+        border-bottom: 1px solid #1f2937;
     }
 
     nav h2 {
-        color: #38bdf8;
-        font-size: 22px;
+        color: #60a5fa;
+        font-weight: 600;
         letter-spacing: 1px;
     }
 
     nav ul {
         display: flex;
-        gap: 25px;
+        gap: 22px;
         list-style: none;
     }
 
     nav ul li a {
         text-decoration: none;
-        color: white;
-        font-size: 15px;
+        color: #cbd5e1;
+        font-size: 14px;
         transition: 0.3s;
-        position: relative;
     }
 
     nav ul li a:hover {
-        color: #38bdf8;
+        color: #60a5fa;
     }
 
-    nav ul li a::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        width: 0%;
-        height: 2px;
-        background: #38bdf8;
-        transition: 0.3s;
-    }
-
-    nav ul li a:hover::after {
-        width: 100%;
-    }
-
-    /* HERO SECTION */
+    /* HERO */
     .home {
-        height: 90vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 20px;
+        padding: 40px 20px;
     }
 
     .home h1 {
-        font-size: 52px;
-        margin-bottom: 10px;
+        font-size: 48px;
+        font-weight: 700;
+        color: #f1f5f9;
     }
 
     .home h3 {
-        font-size: 22px;
-        color: #38bdf8;
-        margin-bottom: 15px;
+        font-size: 20px;
+        color: #60a5fa;
+        margin-top: 10px;
+        font-weight: 500;
     }
 
     .home p {
-        font-size: 18px;
         max-width: 600px;
-        color: #cbd5e1;
+        margin-top: 15px;
+        color: #94a3b8;
+        font-size: 16px;
     }
 
     .btn {
         margin-top: 25px;
-        padding: 12px 25px;
-        background: #38bdf8;
-        color: black;
+        padding: 10px 22px;
+        background: #2563eb;
+        color: white;
         border: none;
-        border-radius: 6px;
+        border-radius: 8px;
         cursor: pointer;
-        font-weight: bold;
         transition: 0.3s;
+        font-weight: 500;
     }
 
     .btn:hover {
-        background: #0ea5e9;
-        transform: scale(1.05);
+        background: #1d4ed8;
+    }
+
+    /* PAGE BOX SECTION */
+    .pages {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: #111827;
+        padding: 25px;
+        border-radius: 12px;
+        border: 1px solid #1f2937;
+        text-align: center;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        border-color: #3b82f6;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: #e5e7eb;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .card p {
+        margin-top: 8px;
+        font-size: 13px;
+        color: #94a3b8;
     }
 
     /* RESPONSIVE */
@@ -121,19 +142,13 @@
         nav {
             flex-direction: column;
             gap: 10px;
-            padding: 15px;
-        }
-
-        nav ul {
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
         }
 
         .home h1 {
-            font-size: 36px;
+            font-size: 32px;
         }
     }
+
 </style>
 </head>
 
@@ -159,9 +174,44 @@
     <h1>Hi, I'm Nandana 👋</h1>
     <h3>Aspiring Data Scientist</h3>
     <p>
-        I transform raw data into meaningful insights and build solutions using Machine Learning,
-        Python, and Data Analytics to solve real-world problems.
+        I build data-driven solutions using Python, Machine Learning, and Analytics to solve real-world problems.
     </p>
+    <button class="btn">View My Work</button>
+</section>
+
+<!-- PAGE CARDS -->
+<section class="pages">
+
+    <div class="card">
+        <a href="about.html">About Me</a>
+        <p>Know more about my background</p>
+    </div>
+
+    <div class="card">
+        <a href="skills.html">Skills</a>
+        <p>Technical skills & tools</p>
+    </div>
+
+    <div class="card">
+        <a href="projects.html">Projects</a>
+        <p>My data science work</p>
+    </div>
+
+    <div class="card">
+        <a href="certifications.html">Certifications</a>
+        <p>Courses & achievements</p>
+    </div>
+
+    <div class="card">
+        <a href="blog.html">Blog</a>
+        <p>My thoughts & learning</p>
+    </div>
+
+    <div class="card">
+        <a href="contact.html">Contact</a>
+        <p>Get in touch with me</p>
+    </div>
+
 </section>
 
 </body>

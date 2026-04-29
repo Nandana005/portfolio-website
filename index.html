@@ -1,109 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nandana Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nandana | Portfolio</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+    }
 
-        /* Navigation Bar */
+    body {
+        background: #0f172a;
+        color: white;
+        line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 60px;
+        background: rgba(2, 6, 23, 0.9);
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+    }
+
+    nav h2 {
+        color: #38bdf8;
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 25px;
+        list-style: none;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    nav ul li a:hover {
+        color: #38bdf8;
+    }
+
+    nav ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        background: #38bdf8;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+
+    /* HERO SECTION */
+    .home {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home h1 {
+        font-size: 52px;
+        margin-bottom: 10px;
+    }
+
+    .home h3 {
+        font-size: 22px;
+        color: #38bdf8;
+        margin-bottom: 15px;
+    }
+
+    .home p {
+        font-size: 18px;
+        max-width: 600px;
+        color: #cbd5e1;
+    }
+
+    .btn {
+        margin-top: 25px;
+        padding: 12px 25px;
+        background: #38bdf8;
+        color: black;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #0ea5e9;
+        transform: scale(1.05);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
         nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 50px;
-            background: #020617;
-        }
-
-        nav h2 {
-            color: #38bdf8;
+            flex-direction: column;
+            gap: 10px;
+            padding: 15px;
         }
 
         nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li {
-            cursor: pointer;
-        }
-
-        nav ul li:hover {
-            color: #38bdf8;
-        }
-
-        /* Home Section */
-        .home {
-            height: 90vh;
-            display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
-            text-align: center;
+            gap: 15px;
         }
 
         .home h1 {
-            font-size: 48px;
-            margin: 10px 0;
+            font-size: 36px;
         }
-
-        .home h3 {
-            font-size: 24px;
-            color: #38bdf8;
-        }
-
-        .home p {
-            font-size: 18px;
-            max-width: 500px;
-        }
-
-        .btn {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #38bdf8;
-            color: black;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background: #0ea5e9;
-        }
-    </style>
+    }
+</style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <h2>Nandana</h2>
-        <ul>
-           <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-	    <li><a href="certifications.html">Certifications</a></li>
-	    <li><a href="achievements.html">Achievements</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<!-- NAVBAR -->
+<nav>
+    <h2>Nandana</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- Home Section -->
-    <section class="home">
-        <h1>Hi, I'm Nandana 👋</h1>
-        <h3>Aspiring Data Scientist</h3>
-        <p>Turning data into meaningful insights and solving real-world problems using Data Science.</p>
-    </section>
+<!-- HERO -->
+<section class="home">
+    <h1>Hi, I'm Nandana 👋</h1>
+    <h3>Aspiring Data Scientist</h3>
+    <p>
+        I transform raw data into meaningful insights and build solutions using Machine Learning,
+        Python, and Data Analytics to solve real-world problems.
+    </p>
+</section>
 
 </body>
 </html>

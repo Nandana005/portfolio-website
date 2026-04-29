@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 50px;
+            background: #020617;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            padding: 50px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #38bdf8;
+        }
+
+        .post {
+            background: #020617;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .post h2 {
+            color: #38bdf8;
+        }
+
+        .post p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Nandana</h2>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <div class="container">
+        <h1>Blog & Learning</h1>
+
+        <!-- Blog Post 1 -->
+        <div class="post">
+            <h2>How K-Means Works (Intuitively)</h2>
+            <p>
+                K-Means is a clustering algorithm used to group similar data points together. 
+                It works by selecting a number of clusters (K) and randomly initializing centroids.
+            </p>
+            <p>
+                The algorithm assigns each data point to the nearest centroid and then recalculates the centroids 
+                based on the average of points in each cluster. This process repeats until the centroids no longer change.
+            </p>
+            <p>
+                This method helps in identifying patterns and grouping similar data, such as customer segmentation.
+            </p>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="post">
+            <h2>What I Learned from My First ML Project</h2>
+            <p>
+                My first machine learning project taught me the importance of data preprocessing. 
+                Cleaning the data and handling missing values had a major impact on model performance.
+            </p>
+            <p>
+                I also learned how to select the right model and evaluate its performance using accuracy and other metrics.
+            </p>
+            <p>
+                Overall, the project helped me understand the practical workflow of building a machine learning solution.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

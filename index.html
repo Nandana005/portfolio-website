@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nandana | Portfolio</title>
 
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -17,7 +16,7 @@
     }
 
     body {
-        background: #0b1220;
+        background: #000000; /* pure black */
         color: #e5e7eb;
     }
 
@@ -27,12 +26,12 @@
         justify-content: space-between;
         align-items: center;
         padding: 18px 60px;
-        background: #0f172a;
-        border-bottom: 1px solid #1f2937;
+        background: #050505;
+        border-bottom: 1px solid #111827;
     }
 
     nav h2 {
-        color: #60a5fa;
+        color: #38bdf8; /* light blue */
         font-weight: 600;
         letter-spacing: 1px;
     }
@@ -51,7 +50,7 @@
     }
 
     nav ul li a:hover {
-        color: #60a5fa;
+        color: #38bdf8;
     }
 
     /* HERO */
@@ -66,31 +65,32 @@
     }
 
     .home h1 {
-        font-size: 48px;
+        font-size: 50px;
         font-weight: 700;
-        color: #f1f5f9;
+        color: #ffffff;
     }
 
     .home h3 {
         font-size: 20px;
-        color: #60a5fa;
+        color: #38bdf8;
         margin-top: 10px;
         font-weight: 500;
     }
 
     .home p {
-        max-width: 600px;
+        max-width: 650px;
         margin-top: 15px;
-        color: #94a3b8;
+        color: #9ca3af;
         font-size: 16px;
+        line-height: 1.6;
     }
 
     .btn {
         margin-top: 25px;
-        padding: 10px 22px;
-        background: #2563eb;
-        color: white;
-        border: none;
+        padding: 11px 24px;
+        background: transparent;
+        color: #38bdf8;
+        border: 1px solid #38bdf8;
         border-radius: 8px;
         cursor: pointer;
         transition: 0.3s;
@@ -98,7 +98,9 @@
     }
 
     .btn:hover {
-        background: #1d4ed8;
+        background: #38bdf8;
+        color: black;
+        transform: scale(1.05);
     }
 
     /* PAGE BOX SECTION */
@@ -110,7 +112,7 @@
     }
 
     .card {
-        background: #111827;
+        background: #0a0a0a;
         padding: 25px;
         border-radius: 12px;
         border: 1px solid #1f2937;
@@ -120,21 +122,26 @@
     }
 
     .card:hover {
-        transform: translateY(-5px);
-        border-color: #3b82f6;
+        transform: translateY(-6px);
+        border-color: #38bdf8;
+        box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
     }
 
     .card a {
         text-decoration: none;
-        color: #e5e7eb;
+        color: #ffffff;
         font-weight: 500;
         font-size: 16px;
+    }
+
+    .card a:hover {
+        color: #38bdf8;
     }
 
     .card p {
         margin-top: 8px;
         font-size: 13px;
-        color: #94a3b8;
+        color: #9ca3af;
     }
 
     /* RESPONSIVE */
@@ -145,7 +152,7 @@
         }
 
         .home h1 {
-            font-size: 32px;
+            font-size: 34px;
         }
     }
 
@@ -174,7 +181,8 @@
     <h1>Hi, I'm Nandana 👋</h1>
     <h3>Aspiring Data Scientist</h3>
     <p>
-        I build data-driven solutions using Python, Machine Learning, and Analytics to solve real-world problems.
+        I build intelligent, data-driven solutions using Python, Machine Learning, and Analytics
+        to solve real-world problems and create impact.
     </p>
     <button class="btn">View My Work</button>
 </section>
@@ -184,17 +192,17 @@
 
     <div class="card">
         <a href="about.html">About Me</a>
-        <p>Know more about my background</p>
+        <p>My background & journey</p>
     </div>
 
     <div class="card">
         <a href="skills.html">Skills</a>
-        <p>Technical skills & tools</p>
+        <p>Tools & technologies I use</p>
     </div>
 
     <div class="card">
         <a href="projects.html">Projects</a>
-        <p>My data science work</p>
+        <p>Real-world ML & data projects</p>
     </div>
 
     <div class="card">
@@ -204,12 +212,12 @@
 
     <div class="card">
         <a href="blog.html">Blog</a>
-        <p>My thoughts & learning</p>
+        <p>Learning & insights</p>
     </div>
 
     <div class="card">
         <a href="contact.html">Contact</a>
-        <p>Get in touch with me</p>
+        <p>Let’s connect</p>
     </div>
 
 </section>

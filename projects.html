@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 50px;
+            background: #020617;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            padding: 50px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #38bdf8;
+        }
+
+        .project {
+            background: #020617;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .project h2 {
+            color: #38bdf8;
+        }
+
+        .project p {
+            line-height: 1.6;
+        }
+
+        a.button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #38bdf8;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a.button:hover {
+            background: #0ea5e9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Nandana</h2>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>My Projects</h1>
+
+        <!-- Project 1 -->
+        <div class="project">
+            <h2>Student Performance Prediction (Classification)</h2>
+            <p><strong>Problem:</strong> Predict whether a student will pass or fail based on study hours and attendance.</p>
+            <p><strong>Dataset:</strong> Student dataset with features like hours studied, attendance, and scores.</p>
+            <p><strong>Approach:</strong> Data cleaning, handling missing values, and feature selection.</p>
+            <p><strong>Model Used:</strong> Logistic Regression</p>
+            <p><strong>Result:</strong> Achieved good accuracy in predicting student outcomes.</p>
+            <p><strong>Key Learning:</strong> Importance of preprocessing and feature selection.</p>
+            <a href="#" class="button">GitHub Link</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project">
+            <h2>House Price Prediction (Regression)</h2>
+            <p><strong>Problem:</strong> Predict house prices based on features like area and number of rooms.</p>
+            <p><strong>Dataset:</strong> Housing dataset.</p>
+            <p><strong>Approach:</strong> Data preprocessing and feature scaling.</p>
+            <p><strong>Model Used:</strong> Linear Regression</p>
+            <p><strong>Result:</strong> Accurate prediction of house prices.</p>
+            <p><strong>Key Learning:</strong> Understanding regression models and feature importance.</p>
+            <a href="#" class="button">GitHub Link</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project">
+            <h2>Customer Segmentation (Clustering)</h2>
+            <p><strong>Problem:</strong> Group customers based on purchasing behavior.</p>
+            <p><strong>Dataset:</strong> Customer dataset with spending patterns.</p>
+            <p><strong>Approach:</strong> Data visualization and clustering techniques.</p>
+            <p><strong>Model Used:</strong> K-Means Clustering</p>
+            <p><strong>Result:</strong> Customers grouped into meaningful segments.</p>
+            <p><strong>Key Learning:</strong> Understanding unsupervised learning techniques.</p>
+            <a href="#" class="button">GitHub Link</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

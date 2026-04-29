@@ -1,106 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Nandana</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+
+    body {
+        background: #000000;
+        color: #e5e7eb;
+    }
+
+    /* NAVBAR */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 60px;
+        background: #050505;
+        border-bottom: 1px solid #111827;
+    }
+
+    nav h2 {
+        color: #38bdf8;
+        font-weight: 600;
+    }
+
+    nav div {
+        display: flex;
+        gap: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #cbd5e1;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #38bdf8;
+    }
+
+    /* CONTAINER */
+    .container {
+        max-width: 700px;
+        margin: auto;
+        padding: 70px 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    p.subtitle {
+        color: #9ca3af;
+        margin-bottom: 40px;
+    }
+
+    /* CONTACT CARD */
+    .contact-card {
+        background: #0a0a0a;
+        padding: 30px;
+        border-radius: 12px;
+        border: 1px solid #1f2937;
+        transition: 0.3s;
+    }
+
+    .contact-card:hover {
+        border-color: #38bdf8;
+        box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
+    }
+
+    .contact-item {
+        margin: 18px 0;
+        font-size: 15px;
+        color: #cbd5e1;
+    }
+
+    .contact-item strong {
+        color: #ffffff;
+    }
+
+    a {
+        color: #38bdf8;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* BUTTON STYLE */
+    .btn {
+        margin-top: 20px;
+        padding: 10px 22px;
+        background: transparent;
+        color: #38bdf8;
+        border: 1px solid #38bdf8;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #38bdf8;
+        color: black;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
         nav {
-            display: flex;
-            justify-content: space-between;
-            padding: 15px 50px;
-            background: #020617;
-        }
-
-        nav h2 {
-            color: #38bdf8;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-        }
-
-        nav a:hover {
-            color: #38bdf8;
-        }
-
-        .container {
-            padding: 50px;
-            max-width: 700px;
-            margin: auto;
-            text-align: center;
+            flex-direction: column;
+            gap: 10px;
         }
 
         h1 {
-            color: #38bdf8;
+            font-size: 30px;
         }
+    }
 
-        .contact-card {
-            background: #020617;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
-        }
-
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+</style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <h2>Nandana</h2>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
+<!-- NAVIGATION -->
+<nav>
+    <h2>Nandana</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- CONTACT -->
+<div class="container">
+
+    <h1>Contact Me</h1>
+    <p class="subtitle">Let’s connect and build something amazing 🚀</p>
+
+    <div class="contact-card">
+
+        <div class="contact-item">
+            <strong>Email:</strong><br>
+            <a href="mailto:divyaammoos@gmail.com">divyaammoos@gmail.com</a>
         </div>
-    </nav>
 
-    <!-- Contact Section -->
-    <div class="container">
-        <h1>Contact Me</h1>
-
-        <div class="contact-card">
-            <p><strong>Email:</strong> 
-                <a href="mailto:divyaammoos@gmail.com">divyaammoos@gmail.com</a>
-            </p>
-
-            <p><strong>LinkedIn:</strong> 
-                <a href="https://linkedin.com/in/yourprofile" target="_blank">
-                    linkedin.com/in/yourprofile
-                </a>
-            </p>
-
-            <p><strong>GitHub:</strong> 
-                <a href="https://github.com/Nandana005" target="_blank">
-                    github.com/Nandana005
-                </a>
-            </p>
+        <div class="contact-item">
+            <strong>LinkedIn:</strong><br>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">
+                linkedin.com/in/yourprofile
+            </a>
         </div>
+
+        <div class="contact-item">
+            <strong>GitHub:</strong><br>
+            <a href="https://github.com/Nandana005" target="_blank">
+                github.com/Nandana005
+            </a>
+        </div>
+
+        <button class="btn">Download Resume</button>
 
     </div>
+
+</div>
 
 </body>
 </html>
